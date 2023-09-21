@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undifiend</title>
+    <!-- Termasuk Tipe Data -->
+</head>
+<body>
+    <h1>Undifiend</h1>
+    <br>
+    <h1 id="un" style="color: #db1414;"></h1>
+    <!-- Undifien var ada tapi isi [value]  ngga ada
+     kalo null var ada isinya ada tapi outputnya kosong/ null-->
+    <script>
+// un dan null diganti id nya (" ")
+        // let a;
+        // document.getElementById("un").innerHTML = a;
+
+
+        // 1. Undefined
+ // [===] = agar data sama
+        // let umur = false; (kalau diisi false jadi bukan undefined)
+        // let data = umur; 
+
+        // if(umur === undefined){
+        //     data = "bener undefined";
+        //  }else{
+        //     data ="bukan undefined";
+        //  }
+        //  document.getElementById("un").innerHTML = data;
+
+
+
+        //2.  Under Array Value
+//         const bias = ["DO", "perceye", "jk", "v"];
+// // mau munculin tulisan dibungkus pake data [agar minim typo/kesalahan ada autocomplete]
+//         let data = bias;
+
+
+// // kalau mau manggil indeks , harus sesuai ideks kalau diisi [10] hasil = undefined
+// // termasuk var publik , bisa di akses dimanapun       
+//         if(bias[10] === undefined){
+//             data = "bias ngga ada";
+//          }else{
+//             data = "bias ada";
+//          }
+//          document.getElementById("un").innerHTML = data;
+
+
+
+
+
+    //3.  Undefined data objek
+    // {diisi data}
+    // beda data objek (masukin properti ) sama array
+    const mhs = {
+        
+    };
+    let data = mhs;
+
+    if(mhs.nama === undefined){
+         data = "Data objek undefiend";
+        }else{
+            data = "Data objek ketemu";
+         }
+          document.getElementById("un").innerHTML = data;
+
+    
+          
+
+    
+
+
+    </script>
+</body>
+</html>

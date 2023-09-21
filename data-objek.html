@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Objek</title>
+    <!-- mirip array -->
+</head>
+
+<body>
+    <h1>Jenis Susu</h1>
+
+    <table border="1">
+        <tr>
+            <!-- properti -->
+            <th>Merk</th>
+            <th>Varian</th>
+            <th>Ukuran</th>
+            <th>Harga</th>
+            <th>Deskripsi</th>
+        </tr>
+        <tr>
+            <td><span id="Merk"></span></td>
+            <td><span id="Varian"></span></td>
+            <td><span id="Ukuran"></span></td>
+            <td><span id="Harga"></span></td>
+            <td><span id="Deskripsi"></span></td>
+        
+            
+        </tr>
+    </table>
+
+    <script>
+        
+        var susu ={
+            Merk: "Milku",
+            Varian: "Strawberry",
+            Ukuran: "200ml",
+            Harga: "3000",
+            Deskripsi:function(){
+                return this.Merk + " yang enak rasa" + this.Varian
+            }
+        }
+
+            document.getElementById("Merk").innerHTML = susu.Merk;
+            document.getElementById("Varian").innerHTML = susu.Varian;
+            document.getElementById("Ukuran").innerHTML = susu.Ukuran;
+            document.getElementById("Harga").innerHTML = susu.Harga;
+            document.getElementById("Deskripsi").innerHTML = susu.Deskripsi () ;
+            </script>
+            
+    
+</body>
+</html>

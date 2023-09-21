@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>latihan data objek</title>
+  </head>
+  <style>
+    table{
+        margin: auto;
+    }  
+    h1{
+        text-align: center;
+    }
+    th{
+        background-color: blueviolet;
+    }
+  </style>
+  <body>
+    <h1>Siswa</h1>
+
+    <table border="1">
+      <tr>
+        <th>Nama</th>
+        <th>Kelas</th>
+        <th>Umur</th>
+        <th>Deskripsi</th>
+      </tr>
+      <tr>
+        <td><span id="Nama"></span></td>
+        <td><span id="Kelas"></span></td>
+        <td><span id="Umur"></span></td>
+        <td><span id="Deskripsi"></span></td>
+      </tr>
+    </table>
+    <script>
+        // bisa pake const dan variabel
+      var siswa = {
+        Nama: "Rio",
+        Kelas: "12 ",
+        Umur: "17",
+        Deskripsi: function () {
+          return this.Nama + " siswa   terpandai " + this.Kelas;
+        },
+      };
+
+      console.table([siswa]);
+    //   kalau mau dimunculin di console
+      document.getElementById("Nama").innerHTML = siswa.Nama;
+      document.getElementById("Kelas").innerHTML = siswa.Kelas;
+      document.getElementById("Umur").innerHTML = siswa.Umur;
+      document.getElementById("Deskripsi").innerHTML = siswa.Deskripsi();
+    </script>
+  </body>
+</html>

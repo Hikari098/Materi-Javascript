@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In Operator</title>
+    <!-- masuk data objek -->
+</head>
+<body>
+    <h1>In Operator</h1>
+    <h1 id="inop"></h1>
+    <!-- 1. In Operator buat ngecek apakah properti / index didalam data objek -->
+    <!-- berarti in operator mainin data objek atau array -->
+   <script>
+    let permen = {
+        nama :"Milkita",
+        kandungan: "susu",
+     }
+    // rumus = "properti" in variabel
+    // sensitive case [harus sama]
+    // true karena propertinya dah masuk
+    // bisa pake apa aja asal ada petiknya
+
+    // document.getElementById("inop").innerHTML="nama" in permen;
+
+
+
+    //2.  Nyari di Null / Undefien -> tetap terbaca / true karena yg dicek cuma properti/index
+    // hasil tetap true karena yg dicari properti walau diisi un /null karena yg dicari bukan value 
+    // let kota ={
+    //     depan :"bo",
+    //     tengah: undefined,
+    //     belakang:"gor"
+    // }
+    // document.getElementById("inop").innerHTML="tengah" in kota;
+
+
+    // 3. Di Array
+    // rumus = index keberapa in variabel
+    // penjelasan sama seperti diawal nyarinya index
+    const bunga = ["mawar", "melati","semua indah",null, undefined];
+    document.getElementById("inop").innerHTML= 3 in bunga;
+
+   </script> 
+</body>
+</html>

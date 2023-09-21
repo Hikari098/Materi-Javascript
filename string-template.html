@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String Template</title>
+  </head>
+  <style>
+    /*  kalau pakai id manggil style menggunakan #  */
+    #teks{
+        color: rgb(223, 41, 41);
+        
+    }
+  </style>
+  <body>
+    <h1>Belajar String Template</h1>
+    <br />
+    <h2 id="teks"></h2>
+
+    <script>
+    //   let nama = "firdha";
+    //   let asal = "bekasi";
+      
+    // // untuk menghemat code
+    //   //  $ {namavariabel} -> fungsinya manggil variabel
+    // //   (` `) = back tick
+
+    //   document.getElementById("teks").innerHTML = `nama saya ${nama} asal saya ${asal};
+
+    // a
+    let nama = "firdha";
+      let asal = "bekasi";
+      let nilai ="80";
+// b
+      let arr = ["E", 2, 2.2];
+      let boo = true;
+      let multi = `
+      halo
+      saya
+      hikari`;
+
+    // a
+    // document.getElementById("teks").innerHTML = `nama saya ${nama} lulus : ${nilai == 80 && asal == "bekasi"};//   
+    
+  // b
+    // multiline string
+    // document.writeln("<pre>"); = pengganti document.getElementById("").innerHTML =
+      // yang penting  document.writeln("<pre>"); ada di atas  document.writeln(multi);
+    document.writeln("<pre>");
+    document.writeln(multi);
+    document.writeln("<pre>");
+
+        
+
+    </script>
+  </body>
+</html>

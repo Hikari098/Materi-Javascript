@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipe Data</title>
+</head>
+<body>
+    <h1>Tipe Data Javascript</h1>
+    <!-- String = Text
+        <!- bisa pakai( '') -->
+        <!-- bisa  ( " ") -->
+        <!-- untuk teks -->
+    <!-- Number = Nomor
+Boolean = True / false
+Array = Banyak Data --> -->
+<h2 id="number"></h2>
+<h2 id="string"></h2>
+<h2 id="boolean"></h2>
+<h2 id="array"></h2>
+
+<script>
+
+    var dataNumber = 20;
+    
+    console.log(dataNumber);
+    document.getElementById("number").innerHTML = dataNumber;
+
+    // // escape caharacter 
+    // /' -> '
+    // /'' -> '' ''
+    // /n -> enter atau line baru
+    // /t ->tab 
+    // /b ->simbol kotak
+    
+
+    var dataString = "Mahasiswi Programmer";
+    // repeat () = mengulang
+    // toUperCase ( ) = Huruf Capital Semua
+    // toLowerCase () = Biar Kecil Semua
+    // length  = ngitung ada berapa huruf
+    // slice () = Buat Potong
+    // replace () = Buat Mengganti
+
+    console.log(dataString.replace(10));
+    document.getElementById("string").innerHTML = dataString.replace(10);
+
+    // boolean = true atau false
+
+    var dataBoolean = true;
+
+    console.log(dataBoolean);
+    document.getElementById.innerHTML = dataBoolean;
+
+    // Array = bisa menyimpan  banyak data apapun tipenya
+
+    var dataArray = ["Firdha",2, true,3,40.5];
+    console.log(dataArray);
+    document.getElementById("array").innerHTML = dataArray;
+
+
+
+
+
+</script>
+    
+</body>
+</html>

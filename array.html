@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+    <!-- isi kumpulan data
+    sifat dinamis 
+    bisa diisi apa aja = string, nama, number boolean (true/ false)
+    fungsi null = untuk mengisi kekosongan pada array
+    disimpan secara berurutan(urutan angka = index menghitung dari "0")
+    unyuk penulisan teks jangan lupa = " "
+ -->
+</head>
+<body>
+    <h1>Tipe Data Array</h1>
+    <h1 id="sitak"></h1>
+    <!-- Array bisa diisi tipe apapun
+    sifat dinamis = data nambah kalau input manual -->
+    
+
+
+    <script>
+        let a = ["hikari", 12, false, null  , "poo"];
+
+ // menemukan index di array = variabel[index]
+        // document.getElementById("sitak").innerHTML = a[0];
+
+ // // menghitung ada berapa index = variabel.length
+        // document.getElementById("sitak").innerHTML = a.length;
+
+// nambah data ke array = variabel.push(nilai)
+// menduplikat data agar keluar semua
+        // document.getElementById("sitak").innerHTML = a.push(80, "eaa" , true,) ;
+        // document.getElementById("sitak").innerHTML = a;
+
+// megubah data di posisi index = variabel[panggil index] = nilainya
+        // document.getElementById("sitak").innerHTML = a[0] = "shaumi";
+        // document.getElementById("sitak").innerHTML = a;
+
+// menghapus data di posisi index = delete variabel[ panggil index]
+        document.getElementById("sitak").innerHTML =  delete a[1] ;
+        document.getElementById("sitak").innerHTML = a;
+
+
+
+    </script>
+</body>
+</html>
